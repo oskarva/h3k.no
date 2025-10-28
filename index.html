@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>h3k.no — Lysfabrikken</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>h3k.no — Lysfabrikken</title>
+  <meta name="description" content="Håndlagde lys fra Lysfabrikken. Adventstake, H3k stort og H3k lite. Enkelt og koselig.">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header class="site-header">
-        <div class="wrap">
-            <h1>Velkommen til Lysfabrikken!</h1>
-            <nav class="main-nav">
-                <a href="index.html" aria-current="page">Hjem</a>
-                <a href="contact.html">Kontakt</a>
-            </nav>
-        </div>
-    </header>
+<body class="site">
+  <a class="skip-link" href="#main">Hopp til innhold</a>
 
-    <section class="prices wrap">
-        <div class="price-item">
-            <strong>Adventstake</strong>
-            <span class="price">400,-</span>
-        </div>
-        <div class="price-item">
-            <strong>Stort H3k</strong>
-            <span class="price">300,-</span>
-        </div>
-        <div class="price-item">
-            <strong>Lite H3k</strong>
-            <span class="price">150,-</span>
-        </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <h1 class="site-title">Velkommen til Lysfabrikken!</h1>
+      <nav class="main-nav" aria-label="Hovedmeny">
+        <a class="nav-link is-active" href="index.html" aria-current="page">Hjem</a>
+        <a class="nav-link" href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="prices">
+    <div class="wrap prices-grid">
+      <div class="price-item">
+        <strong>Adventstake</strong>
+        <span class="price">400,-</span>
+      </div>
+      <div class="price-item">
+        <strong>Stort H3k</strong>
+        <span class="price">300,-</span>
+      </div>
+      <div class="price-item">
+        <strong>Lite H3k</strong>
+        <span class="price">150,-</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="wrap main-content">
+    <article class="intro">
+      <p>Nettsiden vår er under konstruksjon 🙂</p>
+    </article>
+
+    <section class="hero-image" aria-label="Produktbilde">
+      <picture>
+        <!-- Hvis du har en webp-variant, legg den her -->
+        <!-- <source srcset="images/h3kstortoglite.webp" type="image/webp"> -->
+        <img
+          src="images/h3kstortoglite.jpg"
+          alt="H3k stort og H3k lite på gavebrett"
+          width="1600" height="1067"
+          loading="lazy" decoding="async"
+        />
+      </picture>
     </section>
+  </main>
 
-    <main class="wrap main-content">
-        <article class="intro">
-            <p>Nettsiden vår er under konstruksjon :)</p>
-        </article>
-
-        <section class="hero-image">
-            <img src="images/h3kstortoglite.jpg" alt="H3k stort og lite" />
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="wrap">
-            <p>&copy; 2025 h3k.no</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2025 h3k.no</p>
+    </div>
+  </footer>
 </body>
 </html>
