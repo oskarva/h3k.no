@@ -47,14 +47,14 @@ body{
 /* Header logo image sizing */
 .logo-img{
   display: block;
-  height: clamp(28px, 10vw, 64px);
-  width: auto;
+  width: clamp(160px, 28%, 420px);
+  height: auto;
 }
 /* Mobile refinements */
 @media (max-width: 620px){
   .site-header{ padding: 12px 0; }
   .container{ padding: 0 12px; }
-  .header-row{ flex-direction: column; align-items: flex-start; gap: 8px; }
+  .header-row{ flex-direction: row; align-items: center; gap: 8px; }
   .nav{ gap: 8px; }
   .nav-btn{ padding: 8px 12px; font-size: 0.95rem; }
 }
