@@ -47,11 +47,16 @@ body{
 /* Header logo image sizing */
 .logo-img{
   display: block;
-  height: 150px;
+  height: clamp(28px, 10vw, 64px);
   width: auto;
 }
+/* Mobile refinements */
 @media (max-width: 620px){
-  .logo-img{ height: 150px; }
+  .site-header{ padding: 12px 0; }
+  .container{ padding: 0 12px; }
+  .header-row{ flex-direction: column; align-items: flex-start; gap: 8px; }
+  .nav{ gap: 8px; }
+  .nav-btn{ padding: 8px 12px; font-size: 0.95rem; }
 }
 
 /* prettier nav buttons */
