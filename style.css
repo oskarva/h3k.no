@@ -26,8 +26,8 @@ body{
 
 /* ----- Header ----- */
 .site-header{
-  background: #fff7ef;
-  color: #24140f;
+  background: #48281f;
+  color: #fff7ef;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   padding: 18px 0;
   box-shadow: var(--shadow);
@@ -49,6 +49,7 @@ body{
   display: block;
   width: clamp(160px, 28%, 420px);
   height: auto;
+  filter: brightness(0) invert(1);
 }
 /* Mobile refinements */
 @media (max-width: 620px){
@@ -77,9 +78,9 @@ body{
   transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
   outline-offset: 3px;
 }
-.nav-btn:hover{ background: #48281f; color: #fff7ef; transform: translateY(-1px); }
+.nav-btn:hover{ background: rgba(255,255,255,.22); color: #fff7ef; transform: translateY(-1px); }
 .nav-btn:active{ transform: translateY(0); }
-.nav-btn.active{ box-shadow: inset 0 -2px 0 var(--brand-2); }
+.nav-btn.active{ box-shadow: inset 0 -2px 0 currentColor; background: fff7ef; }
 
 /* ----- Center card ----- */
 main{
@@ -148,3 +149,4 @@ main{
 }
 @media (max-width: 620px){
   .head
+}
