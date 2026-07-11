@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path
+    d="M16 1.25c-2.9 3.15-4.15 5.25-4.15 7.2A4.14 4.14 0 0 0 16 12.6a4.14 4.14 0 0 0 4.15-4.15C20.15 6.5 18.9 4.4 16 1.25Z"
+    fill="#e8a33f"
+    stroke="#48281f"
+    stroke-width="1.15"
+    stroke-linejoin="round"
+  />
+  <path d="M16 8.8v4.35" fill="none" stroke="#48281f" stroke-width="1.45" stroke-linecap="round" />
+  <path
+    d="M10.25 12.1h11.5v17.65h-11.5Z"
+    fill="#fff7ef"
+    stroke="#48281f"
+    stroke-width="1.35"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M10.9 12.75c1.25-.85 2.35.8 3.6.05 1.4-.85 2.65.65 4.1-.05 1.05-.5 1.75-.25 2.5.05v3.6c-.8.65-1.6.55-2.35.05-1.35-.9-2.55.55-3.85-.05-1.3-.6-2.45.8-4 .05Z"
+    fill="#f4dfc8"
+  />
+  <path d="M10.25 17.35h11.5" fill="none" stroke="#48281f" stroke-width=".85" opacity=".55" />
+</svg>

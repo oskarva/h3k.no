@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Plassholder for gruppebilde</title>
+  <desc id="description">En varm illustrasjon av tre personer samlet rundt et tent lys.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5e7d8" />
+      <stop offset="1" stop-color="#dbc0a5" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="46%" r="28%">
+      <stop offset="0" stop-color="#f5bd58" stop-opacity=".62" />
+      <stop offset="1" stop-color="#f5bd58" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" rx="36" fill="url(#background)" />
+  <path d="M0 665c188-101 337-93 499-26 202 84 381 65 701-54v315H0z" fill="#48281f" opacity=".1" />
+  <circle cx="600" cy="410" r="300" fill="url(#glow)" />
+
+  <g fill="#48281f">
+    <circle cx="370" cy="375" r="90" opacity=".9" />
+    <path d="M206 711c13-154 74-241 164-241s151 87 164 241z" opacity=".9" />
+    <circle cx="600" cy="320" r="100" />
+    <path d="M410 711c15-174 85-274 190-274s175 100 190 274z" />
+    <circle cx="830" cy="375" r="90" opacity=".9" />
+    <path d="M666 711c13-154 74-241 164-241s151 87 164 241z" opacity=".9" />
+  </g>
+
+  <g transform="translate(552 500)">
+    <ellipse cx="48" cy="205" rx="75" ry="17" fill="#24140f" opacity=".18" />
+    <rect x="8" y="54" width="80" height="150" rx="6" fill="#fff7ef" />
+    <ellipse cx="48" cy="54" rx="40" ry="10" fill="#fff7ef" />
+    <path d="M48 51c-3-10 3-18 0-27" fill="none" stroke="#24140f" stroke-width="5" stroke-linecap="round" />
+    <path d="M48 27C28 8 40-14 54-34c1 20 16 28 10 47-3 8-8 13-16 14z" fill="#d88733" />
+  </g>
+
+  <rect x="294" y="766" width="612" height="64" rx="32" fill="#fff7ef" opacity=".92" />
+  <text x="600" y="808" text-anchor="middle" fill="#48281f" font-family="Georgia, serif" font-size="27" letter-spacing="2">GRUPPEBILDE KOMMER</text>
+</svg>

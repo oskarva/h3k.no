@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-labelledby="title description">
+  <title id="title">Plassholder for portrett</title>
+  <desc id="description">En varm, stilisert portrettsilhuett med et lite tent lys.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#f5e7d8" />
+      <stop offset="1" stop-color="#d7b99d" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="38%" r="44%">
+      <stop offset="0" stop-color="#fff7ef" stop-opacity=".85" />
+      <stop offset="1" stop-color="#fff7ef" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="900" rx="32" fill="url(#background)" />
+  <circle cx="360" cy="340" r="285" fill="url(#halo)" />
+  <circle cx="360" cy="305" r="150" fill="#48281f" />
+  <path d="M100 783c18-252 113-389 260-389s242 137 260 389z" fill="#48281f" />
+  <path d="M242 288c30-103 95-154 193-142 63 8 105 45 126 109-101-38-207-27-319 33z" fill="#24140f" opacity=".5" />
+
+  <g transform="translate(540 590)">
+    <circle cx="42" cy="47" r="94" fill="#efb75a" opacity=".2" />
+    <rect x="15" y="39" width="54" height="122" rx="5" fill="#fff7ef" />
+    <ellipse cx="42" cy="39" rx="27" ry="7" fill="#fff7ef" />
+    <path d="M42 37c-2-8 2-13 0-20" fill="none" stroke="#24140f" stroke-width="4" stroke-linecap="round" />
+    <path d="M42 20C29 7 35-7 46-22c0 13 11 20 7 31-2 6-6 10-11 11z" fill="#d88733" />
+  </g>
+
+  <rect x="116" y="805" width="488" height="58" rx="29" fill="#fff7ef" opacity=".92" />
+  <text x="360" y="844" text-anchor="middle" fill="#48281f" font-family="Georgia, serif" font-size="24" letter-spacing="2">PORTRETT KOMMER</text>
+</svg>

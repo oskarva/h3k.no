@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kurs • h3k.no</title>
-  <meta name="description" content="Kurs hos Helligetrekongerslys / Lysfabrikken.">
-  <link rel="stylesheet" href="style.css?v=20251224-1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kurs | Lysfabriken</title>
+  <meta
+    name="description"
+    content="Finn informasjon om neste kurs i lysdypping hos Lysfabriken og hvem du kan kontakte."
+  >
+  <link rel="icon" href="images/candle-cursor.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20260711-1">
+  <script src="script.js?v=20260711-1" defer></script>
 </head>
-<body>
-  <header class="site-header">
+<body class="course-page">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+
+  <header class="site-header" data-site-header>
     <div class="container header-row">
-      <img src="images/Helligetrekongerslys_Lysfabriken_Logo.png" alt="Lysfabrikken logo" class="logo-img" />
+      <a class="logo-link" href="index.html" aria-label="Lysfabriken – gå til forsiden">
+        <img
+          src="images/Helligetrekongerslys_Lysfabriken_Logo.png"
+          alt="Lysfabriken"
+          class="logo-img"
+          width="2127"
+          height="2127"
+        >
+      </a>
+
       <nav class="nav" aria-label="Hovedmeny">
         <a class="nav-btn" href="index.html">Om oss</a>
         <a class="nav-btn" href="produkter.html">Produkter</a>
@@ -20,25 +36,70 @@
     </div>
   </header>
 
-  <main class="container">
-    <article class="text-page">
-      <h1>Kurs</h1>
-      <p>Vi har årlige kurs, første helga i November. Kontakt oss på (+47) 97720046 for påmelding!</p>
+  <main id="main-content" class="container course-main">
+    <section class="course-section" aria-labelledby="course-heading">
+      <header class="section-heading">
+        <p class="eyebrow">Lær å dyppe lys med oss</p>
+        <h1 id="course-heading">Neste kurs</h1>
+      </header>
 
-      <figure class="hero">
-        <img
-          src="images/kurs.jpg"
-          alt="Kurs hos Lysfabrikken"
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-    </article>
+      <div class="course-card">
+        <!-- BYTT UT: Sett inn datoen for neste kurs. -->
+        <div class="course-date">
+          <span class="course-date-label">Neste kursdato</span>
+          <strong>Dato kommer</strong>
+        </div>
+
+        <div class="course-description">
+          <!-- BYTT UT: Erstatt teksten med endelig kursbeskrivelse. -->
+          <h2>Opplev lysdypping</h2>
+          <p>
+            Vi planlegger neste kurs og deler mer informasjon så snart dato og
+            innhold er klart. Kurset vil gi en hyggelig innføring i lysdypping,
+            med tid til både læring, skaperglede og gode samtaler.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="contact-card">
+        <div class="contact-portrait">
+          <!-- BYTT UT: Erstatt plassholderen med portrettet til kontaktpersonen. -->
+          <img
+            src="images/placeholder-portrett.svg"
+            alt="Plassholder for portrett av kontaktpersonen for kurs"
+            width="720"
+            height="900"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="contact-copy">
+          <p class="eyebrow">Spørsmål om kurs?</p>
+          <h2 id="contact-heading">Ta kontakt</h2>
+          <p>Du er hjertelig velkommen til å ta kontakt dersom du lurer på noe.</p>
+
+          <dl class="contact-details">
+            <!-- BYTT UT: Sett inn kontaktpersonens telefonnummer. -->
+            <div>
+              <dt>Telefon</dt>
+              <dd>Telefon kommer</dd>
+            </div>
+            <!-- BYTT UT: Sett inn kontaktpersonens e-postadresse. -->
+            <div>
+              <dt>E-post</dt>
+              <dd>E-post kommer</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 h3k.no</p>
+      <p>&copy; 2026 h3k.no</p>
     </div>
   </footer>
 </body>

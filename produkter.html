@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Produkter • h3k.no</title>
-  <meta name="description" content="Produkter fra Helligetrekongerslys / Lysfabrikken.">
-  <link rel="stylesheet" href="style.css?v=20251224-1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produkter | Lysfabriken</title>
+  <meta name="description" content="Se et utvalg håndlagde lys og lysestaker fra Lysfabriken.">
+  <link rel="icon" href="images/candle-cursor.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20260711-1">
+  <script src="script.js?v=20260711-1" defer></script>
 </head>
-<body>
-  <header class="site-header">
+<body class="products-page">
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
+
+  <header class="site-header" data-site-header>
     <div class="container header-row">
-      <img src="images/Helligetrekongerslys_Lysfabriken_Logo.png" alt="Lysfabrikken logo" class="logo-img" />
+      <a class="logo-link" href="index.html" aria-label="Lysfabriken – gå til forsiden">
+        <img
+          class="logo-img"
+          src="images/Helligetrekongerslys_Lysfabriken_Logo.png"
+          width="2127"
+          height="2127"
+          alt="Lysfabriken"
+        >
+      </a>
       <nav class="nav" aria-label="Hovedmeny">
         <a class="nav-btn" href="index.html">Om oss</a>
         <a class="nav-btn active" href="produkter.html" aria-current="page">Produkter</a>
@@ -20,25 +32,77 @@
     </div>
   </header>
 
-  <main class="container">
-    <article class="text-page">
+  <main id="main-content" class="container">
+    <header class="page-intro">
       <h1>Produkter</h1>
-      <p>Her kommer en oversikt over våre håndlagde lys og klassiske produkter.</p>
+      <p>Et lite utvalg av det vi lager for hånd hos Lysfabriken.</p>
+    </header>
 
-      <figure class="hero">
-        <img
-          src="images/produkter.jpg"
-          alt="Produkter fra Lysfabrikken"
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-    </article>
+    <section class="product-grid" aria-label="Produktoversikt">
+      <a class="product-card" href="adventstake.html">
+        <div class="product-card-media product-card-media--contain">
+          <img
+            src="images/advent.png"
+            alt="Håndlaget adventstake med fire lys"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <div class="product-card-overlay">
+          <div class="product-card-content">
+            <h2 class="product-card-title">Adventstake</h2>
+            <!-- INNHOLD: Erstatt teksten under med endelig kort produktbeskrivelse. -->
+            <p class="product-card-description">En stemningsfull, håndlaget adventstake som lyser opp mørke desemberdager.</p>
+          </div>
+          <span class="product-card-link" aria-hidden="true">Se mer</span>
+        </div>
+      </a>
+
+      <a class="product-card" href="stort-h3k.html">
+        <div class="product-card-media product-card-media--large-crop">
+          <!-- BILDE: Bytt til et eget produktbilde av Stort H3k når det er tilgjengelig. -->
+          <img
+            src="images/h3kstortoglite.jpg"
+            alt="Stort og lite H3k-lys, med det store lyset fremhevet"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="product-card-overlay">
+          <div class="product-card-content">
+            <h2 class="product-card-title">Stort H3k</h2>
+            <!-- INNHOLD: Erstatt teksten under med endelig kort produktbeskrivelse. -->
+            <p class="product-card-description">Et stort dekorlys med et særpreget uttrykk, dyppet for hånd i Lysfabriken.</p>
+          </div>
+          <span class="product-card-link" aria-hidden="true">Se mer</span>
+        </div>
+      </a>
+
+      <a class="product-card" href="lite-h3k.html">
+        <div class="product-card-media product-card-media--small-crop">
+          <!-- BILDE: Bytt til et eget produktbilde av Lite H3k når det er tilgjengelig. -->
+          <img
+            src="images/h3kstortoglite.jpg"
+            alt="Stort og lite H3k-lys, med det lille lyset fremhevet"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="product-card-overlay">
+          <div class="product-card-content">
+            <h2 class="product-card-title">Lite H3k</h2>
+            <!-- INNHOLD: Erstatt teksten under med endelig kort produktbeskrivelse. -->
+            <p class="product-card-description">Et mindre hånddyppet dekorlys som skaper varme i både små og store rom.</p>
+          </div>
+          <span class="product-card-link" aria-hidden="true">Se mer</span>
+        </div>
+      </a>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 h3k.no</p>
+      <p>&copy; 2026 h3k.no</p>
     </div>
   </footer>
 </body>
