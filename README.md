@@ -3,9 +3,12 @@
 Statisk nettsted laget for GitHub Pages. Sidene bruker vanlig HTML, CSS og
 JavaScript og trenger ikke et byggesteg.
 
-## Innhold som skal byttes ut
+Historie- og produkttekstene i HTML-filene er bearbeidet fra kildetekstene i
+`tekst/`.
 
-Søk etter `BYTT UT`, `INNHOLD` og `BILDE` i HTML-filene for å finne alle
+## Innhold som fortsatt skal byttes ut
+
+Søk etter `BYTT UT` og `BILDE` i HTML-filene for å finne alle
 midlertidige tekster og bilder.
 
 - Bytt `images/placeholder-gruppe.svg` i `index.html` med et ekte gruppebilde.

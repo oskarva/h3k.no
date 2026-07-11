@@ -31,7 +31,8 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: calc(100vh + 80px);
+  min-height: calc(100svh + 80px);
   display: flex;
   flex-direction: column;
   color: var(--ink);
@@ -310,6 +311,7 @@ h3 {
 
 /* Home: candle history */
 .history-section {
+  isolation: isolate;
   position: relative;
   overflow: clip;
   padding-block: clamp(64px, 9vw, 120px);
@@ -318,6 +320,7 @@ h3 {
 
 .history-section::before {
   position: absolute;
+  z-index: 0;
   width: 420px;
   height: 420px;
   border-radius: 50%;
@@ -326,6 +329,11 @@ h3 {
   filter: blur(4px);
   inset: 8% auto auto -210px;
   pointer-events: none;
+}
+
+.history-section > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .section-heading {
@@ -391,7 +399,7 @@ h3 {
   padding-top: clamp(42px, 7vw, 76px);
 }
 
-.history-entry:last-child {
+.history-entry:last-of-type {
   min-height: 0;
   padding-bottom: 28px;
   border-bottom: 0;
@@ -407,6 +415,10 @@ h3 {
   font-size: clamp(1.02rem, 1.4vw, 1.15rem);
 }
 
+.history-entry p + p {
+  margin-top: 16px;
+}
+
 .history-year {
   margin-bottom: 9px;
   color: var(--brand-soft) !important;
@@ -415,6 +427,13 @@ h3 {
   font-weight: 800;
   letter-spacing: 0.11em;
   text-transform: uppercase;
+}
+
+.history-source {
+  margin-top: 34px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: italic;
 }
 
 /* Page introductions */
@@ -555,7 +574,7 @@ h3 {
 .product-detail {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  align-items: center;
+  align-items: start;
   gap: clamp(32px, 7vw, 88px);
 }
 
@@ -601,16 +620,40 @@ h3 {
   font-size: clamp(1.04rem, 1.5vw, 1.17rem);
 }
 
+.product-detail-copy .eyebrow {
+  margin-bottom: 10px;
+  color: var(--brand-soft);
+  font-size: 0.78rem;
+}
+
+.product-detail-copy .product-detail-lead {
+  margin-bottom: 30px;
+  color: var(--ink);
+  font-size: clamp(1.12rem, 1.7vw, 1.28rem);
+  line-height: 1.58;
+}
+
+.product-copy-section {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.product-copy-section h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  letter-spacing: -0.015em;
+}
+
+.product-copy-section p:last-child {
+  margin-bottom: 0;
+}
+
 .product-detail-copy .back-link {
-  margin-top: 14px;
+  margin-top: 38px;
 }
 
 /* Course */
-body.course-page {
-  min-height: calc(100vh + 80px);
-  min-height: calc(100svh + 80px);
-}
-
 .course-page main {
   padding-bottom: clamp(72px, 9vw, 116px);
 }
