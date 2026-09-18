@@ -724,6 +724,22 @@ h3 {
   font-size: clamp(1.05rem, 1.5vw, 1.18rem);
 }
 
+.course-visual {
+  margin-top: clamp(20px, 3vw, 28px);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-deep);
+  box-shadow: var(--shadow-small);
+}
+
+.course-visual img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 36%;
+}
+
 .contact-section {
   margin-top: clamp(64px, 9vw, 110px);
   padding-top: clamp(48px, 7vw, 76px);
@@ -756,6 +772,7 @@ h3 {
   height: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center 22%;
 }
 
 .contact-details {
