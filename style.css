@@ -271,12 +271,14 @@ h3 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   align-items: center;
   gap: clamp(32px, 7vw, 88px);
 }
 
 .about-image {
+  width: min(100%, 440px);
+  justify-self: center;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-large);
@@ -286,9 +288,11 @@ h3 {
 
 .about-image img,
 .about-image svg {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center;
 }
 
 .about-copy h1 {
