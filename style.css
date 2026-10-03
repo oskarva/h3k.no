@@ -657,6 +657,44 @@ h3 {
   margin-top: 38px;
 }
 
+/* Adventstake photo gallery */
+.adventstake-gallery {
+  margin-top: clamp(64px, 9vw, 108px);
+  padding-top: clamp(48px, 7vw, 72px);
+  border-top: 1px solid var(--border);
+}
+
+.adventstake-gallery h2 {
+  margin-bottom: clamp(28px, 4vw, 42px);
+}
+
+.adventstake-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.adventstake-gallery-item {
+  align-self: start;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-deep);
+  box-shadow: var(--shadow-small);
+}
+
+.adventstake-gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.adventstake-gallery-item--landscape {
+  grid-column: 1 / -1;
+  width: min(100%, 840px);
+  justify-self: center;
+}
+
 /* Course */
 .course-page main {
   padding-bottom: clamp(72px, 9vw, 116px);
@@ -874,6 +912,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .adventstake-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .about-grid {
     gap: 34px;
   }
@@ -1016,6 +1058,10 @@ h3 {
   }
 
   .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .adventstake-gallery-grid {
     grid-template-columns: 1fr;
   }
 
